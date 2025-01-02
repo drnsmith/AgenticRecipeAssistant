@@ -42,7 +42,7 @@ The assistant adapts to user feedback, refines its suggestions, and learns over 
 ```bash
 $ git clone https://github.com/drnsmith/AgenticRecipeAssistant.git
 $ cd AgenticRecipeAssistant
-
+```
 #### Backend Setup
 1. Create a virtual environment:
    ```bash
@@ -89,7 +89,7 @@ $ cd AgenticRecipeAssistant
 #### Usage
 1. Access the app via your browser at `http://localhost:3000`.
 2. Enter your ingredients and preferences.
-3. Receive personalized recipes and interact with the assistant for adjustments or variations.
+3. Receive personalised recipes and interact with the assistant for adjustments or variations.
 
 ---
 
@@ -134,9 +134,3 @@ Contributions are welcome! Please follow these steps:
 ### License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
----
-
-## Contact
-For questions or feedback, reach out to:
-- **Your Name**: drnatashasth@gmail.com
-- [GitHub Issues](https://github.com/drnsmith/agentic-recipe-assistant/issues)
