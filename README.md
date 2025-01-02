@@ -1,9 +1,24 @@
 ## Agentic Recipe Assistant
 
+### Scenario: Where Data Science Meets Software Engineering
+You're part of a team at a cutting-edge culinary tech company, tasked with developing an AI-driven recipe assistant. The goal is simple. It also transformative: empower users to create and customise recipes based on their unique preferences, available ingredients, and dietary needs—all without endless web searches or scrolling through blogs.
+
+This project represents the perfect intersection of data science and software engineering:
+
+ - As a **data scientist**, you focus on leveraging cutting-edge Large Language Models (LLMs) to generate personalised recipes. Using a rich dataset of culinary knowledge, you design algorithms that can adapt to user input, refine recipes dynamically, and offer insightful suggestions.
+ - As a **software engineer**, you build the infrastructure to bring this vision to life. You create APIs, develop an interactive frontend, and ensure the system runs efficiently, scalably, and seamlessly across devices.
+
+Together, your work enables the assistant to:
+ - Suggest recipes based on the user’s available ingredients.
+ - Offer real-time adjustments (e.g., "Make it spicier" or "Add a vegetarian option").
+ - Provide step-by-step instructions for preparing dishes.
+ - Learn and adapt to user preferences over time, creating a truly personalised culinary experience.
+
 ### Overview
 The **Agentic Recipe Assistant** is an AI-powered solution designed to transform the way users create and customise cooking recipes. Using cutting-edge technologies, including Large Language Models (LLMs), this system generates personalised recipes based on user inputs, such as available ingredients, dietary preferences, and cooking styles. 
 
 The assistant adapts to user feedback, refines its suggestions, and learns over time, offering a seamless and interactive recipe-generation experience.
+So, this project is about creating a robust pipeline where data science powers the intelligence, and software engineering ensures the delivery—offering users an assistant that truly feels like their own personal chef.
 
 ---
 
