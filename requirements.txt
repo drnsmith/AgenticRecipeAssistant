@@ -1,0 +1,16 @@
+fastapi
+uvicorn
+pydantic
+python-dotenv
+httpx
+openai
+pandas
+PyYAML
+scikit-learn
+numpy
+requests
+pyspark
+azure-storage-blob
+pytest
+pytest-asyncio
+httpx
