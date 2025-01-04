@@ -111,19 +111,24 @@ $ cd AgenticRecipeAssistant
 #### Project Structure
 ```
 agentic-recipe-assistant/
-├── app/                # Backend application (FastAPI)
-│   ├── main.py         # API endpoints
+├── app/
+│   ├── main.py         # FastAPI app
 │   ├── models/         # Data models
+│   │   └── __init__.py
 │   ├── services/       # Business logic
+│   │   ├── __init__.py
+│   │   └── recipe_service.py
 │   ├── utils/          # Helper functions
+│   │   └── __init__.py
+│   └── .env            # Environment variables
 ├── frontend/           # Frontend application (React.js)
 ├── data/               # Data processing scripts and datasets
-├── scripts/            # Automation and utility scripts
 ├── tests/              # Unit and integration tests
 ├── Dockerfile          # Docker configuration for backend
 ├── docker-compose.yml  # Multi-container setup
 ├── requirements.txt    # Python dependencies
-├── README.md           # Project documentation
+└── README.md           # Project documentation
+
 ```
 
 ---
