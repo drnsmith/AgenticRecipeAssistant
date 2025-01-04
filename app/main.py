@@ -1,24 +1,19 @@
 from fastapi import FastAPI
-from pydantic import BaseModel
-from typing import List
-from services.recipe_service import generate_recipe
+from app.services.recipe_service import generate_recipe, suggest_variations
 
 app = FastAPI()
-
-class RecipeRequest(BaseModel):
-    ingredients: List[str]
-    preferences: dict = None
 
 @app.get("/health-check")
 def health_check():
     return {"status": "ok"}
 
 @app.post("/generate-recipe")
-def generate_recipe_endpoint(request: RecipeRequest):
-    recipe = generate_recipe(request.ingredients)
+def generate_recipe_endpoint(ingredients: list[str]):
+    recipe = generate_recipe(ingredients)
     return {"recipe": recipe}
 
 @app.post("/suggest-variations")
-def suggest_variations(recipe: dict):
-    # Placeholder for variation logic
-    return {"message": "Suggested variations", "variations": []}
+def suggest_variations_endpoint(recipe: dict):
+    variations = suggest_variations(recipe)
+    return {"variations": variations}
+
