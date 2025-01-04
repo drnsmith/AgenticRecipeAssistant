@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 from typing import List
+from services.recipe_service import generate_recipe
 
 app = FastAPI()
 
@@ -13,9 +14,9 @@ def health_check():
     return {"status": "ok"}
 
 @app.post("/generate-recipe")
-def generate_recipe(request: RecipeRequest):
-    # Placeholder for LLM integration
-    return {"message": f"Generating recipe for: {', '.join(request.ingredients)}"}
+def generate_recipe_endpoint(request: RecipeRequest):
+    recipe = generate_recipe(request.ingredients)
+    return {"recipe": recipe}
 
 @app.post("/suggest-variations")
 def suggest_variations(recipe: dict):
